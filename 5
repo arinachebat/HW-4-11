@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int dlina;
+    char simvol;
+    char napravlenie;
+
+    cout << "введите количество символов";
+    cin >> dlina;
+
+    cout << "введите символ для отображения";
+    cin >> simvol;
+
+    cout << "введите направление линии - a горизонтальная, b вертикальная ";
+    cin >> napravlenie;
+
+    if (napravlenie == 'a') {
+        for (int i = 0; i < dlina; ++i) {
+            cout << simvol;
+        }
+        cout << endl; 
+    } else if (napravlenie == 'b') {
+        for (int i = 0; i < dlina; ++i) {
+            cout << simvol <<endl; 
+        }
+    } else {
+        cout << "Неверное направление.введите 'a' для горизонтальной линии или 'b' для вертикальной"<<endl;
+    }
+
+    return 0;
+}
