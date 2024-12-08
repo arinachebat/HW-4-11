@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Простые числа от 2 до 1000\n";
+
+    for (int num = 2; num <= 1000; ++num) {
+        bool is = true; 
+
+        for (int i = 2; i * i <= num; ++i) { 
+            if (num % i == 0) {
+                is = false; 
+                break; 
+            }
+        }
+
+        if (is) {
+            cout << num << " "; 
+        }
+    }
+
+    cout << endl;
+    return 0;
+}
