@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N; 
+    cout << "Введите количество дней: ";
+    cin >> N;
+
+    int Dist = 0;
+    int EDist = 15;
+
+    for (int day = 1; day <= N; ++day) {
+        Dist += 2;
+        EDist += 2; 
+    }
+
+    cout<<"Общее расстояние за "<< N <<" дней "<< Dist <<"см"<<endl;
+
+    return 0;
+}
